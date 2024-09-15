@@ -1,7 +1,7 @@
+import 'package:Weather/data/my_data.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:my_weather_application/data/my_data.dart';
 import 'package:weather/weather.dart';
 
 part 'weather_event.dart';

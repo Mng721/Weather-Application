@@ -1,12 +1,12 @@
 import 'dart:ui';
 
+import 'package:Weather/bloc/weather_bloc.dart';
+import 'package:Weather/widget/sun_rise_set.dart';
+import 'package:Weather/widget/uv_temperature.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
-import 'package:my_weather_application/bloc/weather_bloc.dart';
-import 'package:my_weather_application/widget/sun_rise_set.dart';
-import 'package:my_weather_application/widget/uv_temperature.dart';
 import 'package:weather/weather.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
       case 'snow':
         return isDay ? 'snow_day.json' : 'snow_night.json';
       case 'scattered clouds':
+      case 'overcast clouds':
         return 'scattered_cloud.json';
       case 'mist':
         return 'mist.json';
